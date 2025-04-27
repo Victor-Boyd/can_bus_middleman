@@ -67,13 +67,64 @@ cd can_bus_middleman
 python3 can_bus_setup.py
 ```
 
-This script includes functions to:
-- Check CAN interface states
-- Reset CAN interfaces
-- Set optimal buffer sizes
-- Handle CAN startup and shutdown
+## CAN Bus Middleman Tool
 
-## Basic Usage
+The repository includes a CAN bus middleman tool that acts as a bridge between two CAN interfaces (CAN0 and CAN1). This allows you to:
+
+- Pass messages bidirectionally between two CAN buses
+- Selectively block specific CAN IDs
+- Monitor and control CAN traffic through a simple CLI
+
+### Running the Middleman
+
+```bash
+python3 can_bus_middleman.py
+```
+
+This will start the middleman with a command-line interface. The tool automatically sets up the CAN interfaces.
+
+### CLI Commands
+
+Once running, you can use the following commands:
+
+```
+block <id>     - Block a CAN ID (e.g., block 0x1A0)
+unblock <id>   - Unblock a CAN ID (e.g., unblock 0x1A0)
+list           - List currently blocked IDs
+status         - Show system status
+pause          - Pause the passthrough
+resume         - Resume the passthrough
+quit           - Exit the program
+```
+
+### Example Usage
+
+1. Start the middleman:
+```bash
+python3 can_bus_middleman.py
+```
+
+2. Check system status:
+```
+Enter command: status
+```
+
+3. Block a specific CAN ID:
+```
+Enter command: block 0x123
+```
+
+4. Temporarily pause all message forwarding:
+```
+Enter command: pause
+```
+
+5. Resume message forwarding:
+```
+Enter command: resume
+```
+
+## Basic CAN Operations
 
 ### Start the CAN interfaces
 

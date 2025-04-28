@@ -7,7 +7,6 @@ A basic repository for CAN bus communication and hacking using the Waveshare 2CH
 - [Waveshare 2-CH CAN HAT](https://www.waveshare.com/2-ch-can-hat.htm)
 - Raspberry Pi (3/4/5) or Jetson device
 - MicroSD card with Raspberry Pi OS/Linux
-- Power supply for your Raspberry Pi/Jetson
 - CAN bus devices to interact with
 
 ## Hardware Setup

@@ -14,7 +14,7 @@ A basic repository for CAN bus communication and hacking using the Waveshare 2CH
 1. Attach the Waveshare 2-CH CAN HAT to your Raspberry Pi or Jetson device's GPIO pins
 2. Connect your CAN devices to the CAN terminals on the HAT
    - The HAT provides two independent CAN channels (CAN0 and CAN1)
-   - Each channel has CANH, CANL and GND connections
+   - Each channel has CANH, CANL and optional GND connections
 3. Power on your Raspberry Pi/Jetson device
 
 ## Software Setup
